@@ -1,0 +1,1 @@
+ffmpeg -y -f x11grab -s $(xdpyinfo | grep dimensions | awk '{print $2;}') -i :0.0 -c:v mpeg4 -qp 0 -r 30 ~/video-$(date --iso-8601=seconds).mp4
