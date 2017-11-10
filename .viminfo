@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/volu
+~MSle0~/mpegts
 
 # Last Substitute Search Pattern:
 ~MSle0&sudo 
@@ -20,10 +20,12 @@
 $ 
 
 # Command Line History (newest to oldest):
+:! man ffmpeg
+|2,0,1510270347,,"! man ffmpeg"
+:q
+|2,0,1510270144,,"q"
 :w
 |2,0,1510269231,,"w"
-:q
-|2,0,1510268893,,"q"
 :redo
 |2,0,1510192987,,"redo"
 :W
@@ -118,10 +120,26 @@ $
 |2,0,1495503322,,"sp src/json.erl"
 :vs ../../mesgd/src/mesgd_server.erl
 |2,0,1495501342,,"vs ../../mesgd/src/mesgd_server.erl"
-:e ../../mesgd/src/mesgd_server.erl
-|2,0,1495501223,,"e ../../mesgd/src/mesgd_server.erl"
 
 # Search String History (newest to oldest):
+? .\%147c
+|2,1,1510270554,,".\\%147c"
+? .\%143c
+|2,1,1510270553,,".\\%143c"
+? .\%141c
+|2,1,1510270552,,".\\%141c"
+?/mpegts
+|2,1,1510270457,47,"mpegts"
+?/mpgts
+|2,1,1510270455,47,"mpgts"
+? .\%110c
+|2,1,1510270223,,".\\%110c"
+? .\%107c
+|2,1,1510270221,,".\\%107c"
+? .\%94c
+|2,1,1510270131,,".\\%94c"
+? .\%87c
+|2,1,1510270129,,".\\%87c"
 ?/volu
 |2,1,1510269160,47,"volu"
 ? .\%121c
@@ -204,24 +222,6 @@ $
 |2,1,1510190793,47,"mod"
 ?/sudo
 |2,1,1510102141,47,"sudo"
-? .\%23c
-|2,1,1510101819,,".\\%23c"
-? .\%26c
-|2,1,1510101818,,".\\%26c"
-? .\%7c
-|2,1,1510101818,,".\\%7c"
-? .\%9c
-|2,1,1510101817,,".\\%9c"
-?/xclip
-|2,1,1510098953,47,"xclip"
-?/container
-|2,1,1509407258,47,"container"
-? sudo 
-|2,1,1509253936,,"sudo "
-?/I've
-|2,1,1509223967,47,"I've"
-?/MD
-|2,1,1509223550,47,"MD"
 
 # Expression History (newest to oldest):
 
@@ -266,236 +266,247 @@ $
 	smart_gaps on
 |3,0,9,1,1,0,1510194116,"smart_gaps on"
 ""-	CHAR	0
-	d
-|3,1,36,0,1,0,1510269552,"d"
+	 
+|3,1,36,0,1,0,1510270460," "
 
 # File marks:
 'Z  63  0  ~/BPS/rt/share/html/Admin/Users/Modify.html
 |4,90,63,0,1493912439,"~/BPS/rt/share/html/Admin/Users/Modify.html"
-'0  3  18  ~/.config/mpd/mpd.conf
-|4,48,3,18,1510269556,"~/.config/mpd/mpd.conf"
-'1  64  23  ~/.config/i3status/config
-|4,49,64,23,1510269256,"~/.config/i3status/config"
-'2  18  22  ~/.config/i3status/config
-|4,50,18,22,1510269236,"~/.config/i3status/config"
-'3  18  22  ~/.config/i3status/config
-|4,51,18,22,1510269236,"~/.config/i3status/config"
-'4  30  2  ~/.xinitrc
-|4,52,30,2,1510269106,"~/.xinitrc"
-'5  1  106  ~/bin/screenrec
-|4,53,1,106,1510269033,"~/bin/screenrec"
-'6  1  1  ~/bin/screenrec
-|4,54,1,1,1510268893,"~/bin/screenrec"
-'7  1  112  ~/test.sh
-|4,55,1,112,1510268876,"~/test.sh"
-'8  1  113  ~/test.sh
-|4,56,1,113,1510268812,"~/test.sh"
-'9  1  115  ~/test.sh
-|4,57,1,115,1510268598,"~/test.sh"
+'0  1  153  ~/bin/screenrec
+|4,48,1,153,1510270563,"~/bin/screenrec"
+'1  1  105  ~/bin/screenrec
+|4,49,1,105,1510270461,"~/bin/screenrec"
+'2  1  152  ~/bin/screenrec
+|4,50,1,152,1510270450,"~/bin/screenrec"
+'3  1  152  ~/bin/screenrec
+|4,51,1,152,1510270450,"~/bin/screenrec"
+'4  1  113  ~/bin/screenrec
+|4,52,1,113,1510270225,"~/bin/screenrec"
+'5  1  113  ~/bin/screenrec
+|4,53,1,113,1510270225,"~/bin/screenrec"
+'6  1  113  ~/bin/screenrec
+|4,54,1,113,1510270225,"~/bin/screenrec"
+'7  1  113  ~/bin/screenrec
+|4,55,1,113,1510270225,"~/bin/screenrec"
+'8  1  83  ~/bin/screenrec
+|4,56,1,83,1510270144,"~/bin/screenrec"
+'9  1  83  ~/bin/screenrec
+|4,57,1,83,1510270144,"~/bin/screenrec"
 
 # Jumplist (newest first):
+-'  1  153  ~/bin/screenrec
+|4,39,1,153,1510270563,"~/bin/screenrec"
+-'  1  105  ~/bin/screenrec
+|4,39,1,105,1510270461,"~/bin/screenrec"
+-'  1  152  ~/bin/screenrec
+|4,39,1,152,1510270450,"~/bin/screenrec"
+-'  1  113  ~/bin/screenrec
+|4,39,1,113,1510270225,"~/bin/screenrec"
+-'  1  83  ~/bin/screenrec
+|4,39,1,83,1510270144,"~/bin/screenrec"
+-'  1  87  ~/bin/screenrec
+|4,39,1,87,1510270136,"~/bin/screenrec"
+-'  1  142  ~/bin/screenrec
+|4,39,1,142,1510269924,"~/bin/screenrec"
 -'  3  18  ~/.config/mpd/mpd.conf
 |4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  11  0  ~/.config/mpd/mpd.conf
-|4,39,11,0,1510269546,"~/.config/mpd/mpd.conf"
--'  64  23  ~/.config/i3status/config
-|4,39,64,23,1510269256,"~/.config/i3status/config"
--'  64  23  ~/.config/i3status/config
-|4,39,64,23,1510269256,"~/.config/i3status/config"
--'  18  22  ~/.config/i3status/config
-|4,39,18,22,1510269251,"~/.config/i3status/config"
--'  18  22  ~/.config/i3status/config
-|4,39,18,22,1510269251,"~/.config/i3status/config"
--'  18  22  ~/.config/i3status/config
-|4,39,18,22,1510269236,"~/.config/i3status/config"
--'  18  22  ~/.config/i3status/config
-|4,39,18,22,1510269236,"~/.config/i3status/config"
--'  62  0  ~/.config/i3status/config
-|4,39,62,0,1510269232,"~/.config/i3status/config"
--'  62  0  ~/.config/i3status/config
-|4,39,62,0,1510269232,"~/.config/i3status/config"
--'  62  0  ~/.config/i3status/config
-|4,39,62,0,1510269232,"~/.config/i3status/config"
--'  62  0  ~/.config/i3status/config
-|4,39,62,0,1510269232,"~/.config/i3status/config"
--'  19  10  ~/.config/i3status/config
-|4,39,19,10,1510269162,"~/.config/i3status/config"
--'  19  10  ~/.config/i3status/config
-|4,39,19,10,1510269162,"~/.config/i3status/config"
--'  19  10  ~/.config/i3status/config
-|4,39,19,10,1510269162,"~/.config/i3status/config"
--'  19  10  ~/.config/i3status/config
-|4,39,19,10,1510269162,"~/.config/i3status/config"
--'  41  14  ~/.config/i3status/config
-|4,39,41,14,1510269160,"~/.config/i3status/config"
--'  41  14  ~/.config/i3status/config
-|4,39,41,14,1510269160,"~/.config/i3status/config"
--'  41  14  ~/.config/i3status/config
-|4,39,41,14,1510269160,"~/.config/i3status/config"
--'  41  14  ~/.config/i3status/config
-|4,39,41,14,1510269160,"~/.config/i3status/config"
--'  17  0  ~/.config/i3status/config
-|4,39,17,0,1510269146,"~/.config/i3status/config"
--'  17  0  ~/.config/i3status/config
-|4,39,17,0,1510269146,"~/.config/i3status/config"
--'  17  0  ~/.config/i3status/config
-|4,39,17,0,1510269146,"~/.config/i3status/config"
--'  17  0  ~/.config/i3status/config
-|4,39,17,0,1510269146,"~/.config/i3status/config"
--'  30  2  ~/.xinitrc
-|4,39,30,2,1510269106,"~/.xinitrc"
--'  30  2  ~/.xinitrc
-|4,39,30,2,1510269106,"~/.xinitrc"
--'  30  2  ~/.xinitrc
-|4,39,30,2,1510269106,"~/.xinitrc"
--'  30  2  ~/.xinitrc
-|4,39,30,2,1510269106,"~/.xinitrc"
--'  30  2  ~/.xinitrc
-|4,39,30,2,1510269106,"~/.xinitrc"
--'  30  2  ~/.xinitrc
-|4,39,30,2,1510269106,"~/.xinitrc"
--'  30  2  ~/.xinitrc
-|4,39,30,2,1510269106,"~/.xinitrc"
--'  30  2  ~/.xinitrc
-|4,39,30,2,1510269106,"~/.xinitrc"
--'  1  0  ~/.xinitrc
-|4,39,1,0,1510269095,"~/.xinitrc"
--'  1  0  ~/.xinitrc
-|4,39,1,0,1510269095,"~/.xinitrc"
--'  1  0  ~/.xinitrc
-|4,39,1,0,1510269095,"~/.xinitrc"
--'  1  0  ~/.xinitrc
-|4,39,1,0,1510269095,"~/.xinitrc"
--'  1  0  ~/.xinitrc
-|4,39,1,0,1510269095,"~/.xinitrc"
--'  1  0  ~/.xinitrc
-|4,39,1,0,1510269095,"~/.xinitrc"
--'  1  0  ~/.xinitrc
-|4,39,1,0,1510269095,"~/.xinitrc"
--'  1  0  ~/.xinitrc
-|4,39,1,0,1510269095,"~/.xinitrc"
--'  1  106  ~/bin/screenrec
-|4,39,1,106,1510269033,"~/bin/screenrec"
--'  1  106  ~/bin/screenrec
-|4,39,1,106,1510269033,"~/bin/screenrec"
--'  1  106  ~/bin/screenrec
-|4,39,1,106,1510269033,"~/bin/screenrec"
--'  1  106  ~/bin/screenrec
-|4,39,1,106,1510269033,"~/bin/screenrec"
--'  1  106  ~/bin/screenrec
-|4,39,1,106,1510269033,"~/bin/screenrec"
--'  1  106  ~/bin/screenrec
-|4,39,1,106,1510269033,"~/bin/screenrec"
--'  1  106  ~/bin/screenrec
-|4,39,1,106,1510269033,"~/bin/screenrec"
--'  1  106  ~/bin/screenrec
-|4,39,1,106,1510269033,"~/bin/screenrec"
--'  1  106  ~/bin/screenrec
-|4,39,1,106,1510269033,"~/bin/screenrec"
--'  1  106  ~/bin/screenrec
-|4,39,1,106,1510269033,"~/bin/screenrec"
--'  1  106  ~/bin/screenrec
-|4,39,1,106,1510269033,"~/bin/screenrec"
--'  1  106  ~/bin/screenrec
-|4,39,1,106,1510269033,"~/bin/screenrec"
--'  1  106  ~/bin/screenrec
-|4,39,1,106,1510269033,"~/bin/screenrec"
--'  1  106  ~/bin/screenrec
-|4,39,1,106,1510269033,"~/bin/screenrec"
--'  1  106  ~/bin/screenrec
-|4,39,1,106,1510269033,"~/bin/screenrec"
--'  1  106  ~/bin/screenrec
-|4,39,1,106,1510269033,"~/bin/screenrec"
--'  1  1  ~/bin/screenrec
-|4,39,1,1,1510268893,"~/bin/screenrec"
--'  1  1  ~/bin/screenrec
-|4,39,1,1,1510268893,"~/bin/screenrec"
--'  1  1  ~/bin/screenrec
-|4,39,1,1,1510268893,"~/bin/screenrec"
--'  1  1  ~/bin/screenrec
-|4,39,1,1,1510268893,"~/bin/screenrec"
--'  1  1  ~/bin/screenrec
-|4,39,1,1,1510268893,"~/bin/screenrec"
--'  1  1  ~/bin/screenrec
-|4,39,1,1,1510268893,"~/bin/screenrec"
--'  1  1  ~/bin/screenrec
-|4,39,1,1,1510268893,"~/bin/screenrec"
--'  1  1  ~/bin/screenrec
-|4,39,1,1,1510268893,"~/bin/screenrec"
--'  1  1  ~/bin/screenrec
-|4,39,1,1,1510268893,"~/bin/screenrec"
--'  1  1  ~/bin/screenrec
-|4,39,1,1,1510268893,"~/bin/screenrec"
--'  1  1  ~/bin/screenrec
-|4,39,1,1,1510268893,"~/bin/screenrec"
--'  1  1  ~/bin/screenrec
-|4,39,1,1,1510268893,"~/bin/screenrec"
--'  1  1  ~/bin/screenrec
-|4,39,1,1,1510268893,"~/bin/screenrec"
--'  1  1  ~/bin/screenrec
-|4,39,1,1,1510268893,"~/bin/screenrec"
--'  1  1  ~/bin/screenrec
-|4,39,1,1,1510268893,"~/bin/screenrec"
--'  1  1  ~/bin/screenrec
-|4,39,1,1,1510268893,"~/bin/screenrec"
--'  1  112  ~/test.sh
-|4,39,1,112,1510268876,"~/test.sh"
--'  1  112  ~/test.sh
-|4,39,1,112,1510268876,"~/test.sh"
--'  1  112  ~/test.sh
-|4,39,1,112,1510268876,"~/test.sh"
--'  1  112  ~/test.sh
-|4,39,1,112,1510268876,"~/test.sh"
--'  1  112  ~/test.sh
-|4,39,1,112,1510268876,"~/test.sh"
--'  1  112  ~/test.sh
-|4,39,1,112,1510268876,"~/test.sh"
--'  1  112  ~/test.sh
-|4,39,1,112,1510268876,"~/test.sh"
--'  1  112  ~/test.sh
-|4,39,1,112,1510268876,"~/test.sh"
--'  1  112  ~/test.sh
-|4,39,1,112,1510268876,"~/test.sh"
--'  1  112  ~/test.sh
-|4,39,1,112,1510268876,"~/test.sh"
--'  1  112  ~/test.sh
-|4,39,1,112,1510268876,"~/test.sh"
--'  1  112  ~/test.sh
-|4,39,1,112,1510268876,"~/test.sh"
--'  1  112  ~/test.sh
-|4,39,1,112,1510268876,"~/test.sh"
--'  1  112  ~/test.sh
-|4,39,1,112,1510268876,"~/test.sh"
--'  1  112  ~/test.sh
-|4,39,1,112,1510268876,"~/test.sh"
--'  1  112  ~/test.sh
-|4,39,1,112,1510268876,"~/test.sh"
--'  1  112  ~/test.sh
-|4,39,1,112,1510268876,"~/test.sh"
--'  1  112  ~/test.sh
-|4,39,1,112,1510268876,"~/test.sh"
--'  1  112  ~/test.sh
-|4,39,1,112,1510268876,"~/test.sh"
--'  1  112  ~/test.sh
-|4,39,1,112,1510268876,"~/test.sh"
--'  1  112  ~/test.sh
-|4,39,1,112,1510268876,"~/test.sh"
--'  1  112  ~/test.sh
-|4,39,1,112,1510268876,"~/test.sh"
--'  1  112  ~/test.sh
-|4,39,1,112,1510268876,"~/test.sh"
--'  1  112  ~/test.sh
-|4,39,1,112,1510268876,"~/test.sh"
--'  1  112  ~/test.sh
-|4,39,1,112,1510268876,"~/test.sh"
--'  1  112  ~/test.sh
-|4,39,1,112,1510268876,"~/test.sh"
--'  1  112  ~/test.sh
-|4,39,1,112,1510268876,"~/test.sh"
--'  1  112  ~/test.sh
-|4,39,1,112,1510268876,"~/test.sh"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  3  18  ~/.config/mpd/mpd.conf
+|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
 
 # History of marks within files (newest to oldest):
+
+> ~/bin/screenrec
+	*	1510270562	0
+	"	1	153
+	^	1	154
+	.	1	153
+	+	1	84
+	+	1	0
+	+	1	104
+	+	1	138
+	+	1	153
 
 > ~/.config/mpd/mpd.conf
 	*	1510269555	0
@@ -543,13 +554,6 @@ $
 	^	30	3
 	.	30	2
 	+	30	2
-
-> ~/bin/screenrec
-	*	1510269033	0
-	"	1	106
-	^	1	107
-	.	1	106
-	+	1	106
 
 > ~/test.sh
 	*	1510268873	0
