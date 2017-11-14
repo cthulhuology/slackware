@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/mpegts
+~MSle0~/007
 
 # Last Substitute Search Pattern:
 ~MSle0&sudo 
@@ -20,16 +20,20 @@
 $ 
 
 # Command Line History (newest to oldest):
+:w
+|2,0,1510627719,,"w"
+:W
+|2,0,1510627671,,"W"
+:q
+|2,0,1510505836,,"q"
+:q!
+|2,0,1510436391,,"q!"
+:sp ~/.xmomaprc
+|2,0,1510436196,,"sp ~/.xmomaprc"
 :! man ffmpeg
 |2,0,1510270347,,"! man ffmpeg"
-:q
-|2,0,1510270144,,"q"
-:w
-|2,0,1510269231,,"w"
 :redo
 |2,0,1510192987,,"redo"
-:W
-|2,0,1510192837,,"W"
 :sp setup.sh
 |2,0,1510183770,,"sp setup.sh"
 :Q
@@ -38,8 +42,6 @@ $
 |2,0,1509253936,,"%s/sudo //g"
 :vs nav.md
 |2,0,1509223393,,"vs nav.md"
-:q!
-|2,0,1509220753,,"q!"
 :sp run
 |2,0,1509219525,,"sp run"
 :q1
@@ -118,10 +120,28 @@ $
 |2,0,1495751640,,"sp mesgd_user.erl"
 :sp src/json.erl
 |2,0,1495503322,,"sp src/json.erl"
-:vs ../../mesgd/src/mesgd_server.erl
-|2,0,1495501342,,"vs ../../mesgd/src/mesgd_server.erl"
 
 # Search String History (newest to oldest):
+?/007
+|2,1,1510627332,47,"007"
+?/mod+d
+|2,1,1510626989,47,"mod+d"
+?/mod+space
+|2,1,1510626947,47,"mod+space"
+?/borders
+|2,1,1510626931,47,"borders"
+?/restart
+|2,1,1510626903,47,"restart"
+?/color
+|2,1,1510626883,47,"color"
+?/slack
+|2,1,1510505839,47,"slack"
+? .\%19c
+|2,1,1510436395,,".\\%19c"
+? .\%17c
+|2,1,1510436394,,".\\%17c"
+? .\%9c
+|2,1,1510436384,,".\\%9c"
 ? .\%147c
 |2,1,1510270554,,".\\%147c"
 ? .\%143c
@@ -158,8 +178,6 @@ $
 |2,1,1510267351,,".\\%14c"
 ? .\%13c
 |2,1,1510267180,,".\\%13c"
-? .\%17c
-|2,1,1510266776,,".\\%17c"
 ? .\%11c
 |2,1,1510266758,,".\\%11c"
 ? .\%44c
@@ -170,8 +188,6 @@ $
 |2,1,1510265841,,".\\%21c"
 ? .\%20c
 |2,1,1510265841,,".\\%20c"
-? .\%19c
-|2,1,1510265841,,".\\%19c"
 ? .\%18c
 |2,1,1510265841,,".\\%18c"
 ? .\%16c
@@ -206,22 +222,6 @@ $
 |2,1,1510193194,47,"Return"
 ?/Space
 |2,1,1510193084,47,"Space"
-?/st
-|2,1,1510192758,47,"st"
-?/stack
-|2,1,1510192615,47,"stack"
-?/mod+q
-|2,1,1510191219,47,"mod+q"
-?/mod+k
-|2,1,1510191163,47,"mod+k"
-?/cmd
-|2,1,1510191135,47,"cmd"
-?/Ctrl
-|2,1,1510190816,47,"Ctrl"
-?/mod
-|2,1,1510190793,47,"mod"
-?/sudo
-|2,1,1510102141,47,"sudo"
 
 # Expression History (newest to oldest):
 
@@ -234,268 +234,437 @@ $
 	 --no-startup-id mpc next
 |3,0,0,0,1,0,1510268047," --no-startup-id mpc next"
 "1	LINE	0
-	order +=
-|3,0,1,1,1,0,1510269152,"order +="
-"2	LINE	0
-	bindsym XF
-|3,0,2,1,1,0,1510268006,"bindsym XF"
-"3	LINE	0
-	mixer_type "software"
-|3,0,3,1,1,0,1510267777,"mixer_type \"software\""
-"4	LINE	0
-	db_file "~/.config/mpd/database"
-|3,0,4,1,1,0,1510266796,"db_file \"~/.config/mpd/database\""
-"5	LINE	0
+	#bindsym $mod+d focus child
 	
-|3,0,5,1,1,0,1510266552,""
+|3,0,1,1,2,0,1510627174,"#bindsym $mod+d focus child",""
+"2	LINE	0
+	order +=
+|3,0,2,1,1,0,1510269152,"order +="
+"3	LINE	0
+	bindsym XF
+|3,0,3,1,1,0,1510268006,"bindsym XF"
+"4	LINE	0
+	mixer_type "software"
+|3,0,4,1,1,0,1510267777,"mixer_type \"software\""
+"5	LINE	0
+	db_file "~/.config/mpd/database"
+|3,0,5,1,1,0,1510266796,"db_file \"~/.config/mpd/database\""
 "6	LINE	0
+	
+|3,0,6,1,1,0,1510266552,""
+"7	LINE	0
 		i3bar_command  i3bar -t
-|3,0,6,1,1,0,1510263926,"	i3bar_command  i3bar -t"
-"7	CHAR	0
+|3,0,7,1,1,0,1510263926,"	i3bar_command  i3bar -t"
+"8	CHAR	0
 	      bindsym Left resize shrink width 10 px or 10 ppt
 	        bindsym Down resize grow height 10 px or 10 ppt
 	        bindsym Up resize shrink height 10 px or 10 ppt
 	        bindsym Right resize grow width 10 px or 10 ppt
 	
 	
-|3,0,7,0,6,0,1510263866,"      bindsym Left resize shrink width 10 px or 10 ppt","        bindsym Down resize grow height 10 px or 10 ppt","        bindsym Up resize shrink height 10 px or 10 ppt","        bindsym Right resize grow width 10 px or 10 ppt","",""
-"8	LINE	0
-	#smart_borders on
-|3,0,8,1,1,0,1510194120,"#smart_borders on"
+|3,0,8,0,6,0,1510263866,"      bindsym Left resize shrink width 10 px or 10 ppt","        bindsym Down resize grow height 10 px or 10 ppt","        bindsym Up resize shrink height 10 px or 10 ppt","        bindsym Right resize grow width 10 px or 10 ppt","",""
 "9	LINE	0
-	smart_gaps on
-|3,0,9,1,1,0,1510194116,"smart_gaps on"
+	#smart_borders on
+|3,0,9,1,1,0,1510194120,"#smart_borders on"
 ""-	CHAR	0
-	 
-|3,1,36,0,1,0,1510270460," "
+	a
+|3,1,36,0,1,0,1510627715,"a"
 
 # File marks:
 'Z  63  0  ~/BPS/rt/share/html/Admin/Users/Modify.html
 |4,90,63,0,1493912439,"~/BPS/rt/share/html/Admin/Users/Modify.html"
-'0  1  153  ~/bin/screenrec
-|4,48,1,153,1510270563,"~/bin/screenrec"
-'1  1  105  ~/bin/screenrec
-|4,49,1,105,1510270461,"~/bin/screenrec"
-'2  1  152  ~/bin/screenrec
-|4,50,1,152,1510270450,"~/bin/screenrec"
-'3  1  152  ~/bin/screenrec
-|4,51,1,152,1510270450,"~/bin/screenrec"
-'4  1  113  ~/bin/screenrec
-|4,52,1,113,1510270225,"~/bin/screenrec"
-'5  1  113  ~/bin/screenrec
-|4,53,1,113,1510270225,"~/bin/screenrec"
-'6  1  113  ~/bin/screenrec
-|4,54,1,113,1510270225,"~/bin/screenrec"
-'7  1  113  ~/bin/screenrec
-|4,55,1,113,1510270225,"~/bin/screenrec"
-'8  1  83  ~/bin/screenrec
-|4,56,1,83,1510270144,"~/bin/screenrec"
-'9  1  83  ~/bin/screenrec
-|4,57,1,83,1510270144,"~/bin/screenrec"
+'0  182  0  ~/.config/i3/config
+|4,48,182,0,1510628051,"~/.config/i3/config"
+'1  421  0  ~/.irssi/config
+|4,49,421,0,1510505845,"~/.irssi/config"
+'2  2  0  ~/.irssi/default.theme
+|4,50,2,0,1510505836,"~/.irssi/default.theme"
+'3  1  22  ~/.xmomaprc
+|4,51,1,22,1510436398,"~/.xmomaprc"
+'4  19  21  ~/.xinitrc
+|4,52,19,21,1510436109,"~/.xinitrc"
+'5  19  21  ~/.xinitrc
+|4,53,19,21,1510436109,"~/.xinitrc"
+'6  1  0  ~/.config/profanity/profrc
+|4,54,1,0,1510434235,"~/.config/profanity/profrc"
+'7  112  8  ~/.ssh/config
+|4,55,112,8,1510433184,"~/.ssh/config"
+'8  1  153  ~/bin/screenrec
+|4,56,1,153,1510270563,"~/bin/screenrec"
+'9  1  105  ~/bin/screenrec
+|4,57,1,105,1510270461,"~/bin/screenrec"
 
 # Jumplist (newest first):
--'  1  153  ~/bin/screenrec
-|4,39,1,153,1510270563,"~/bin/screenrec"
--'  1  105  ~/bin/screenrec
-|4,39,1,105,1510270461,"~/bin/screenrec"
--'  1  152  ~/bin/screenrec
-|4,39,1,152,1510270450,"~/bin/screenrec"
--'  1  113  ~/bin/screenrec
-|4,39,1,113,1510270225,"~/bin/screenrec"
--'  1  83  ~/bin/screenrec
-|4,39,1,83,1510270144,"~/bin/screenrec"
--'  1  87  ~/bin/screenrec
-|4,39,1,87,1510270136,"~/bin/screenrec"
--'  1  142  ~/bin/screenrec
-|4,39,1,142,1510269924,"~/bin/screenrec"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
--'  3  18  ~/.config/mpd/mpd.conf
-|4,39,3,18,1510269556,"~/.config/mpd/mpd.conf"
+-'  182  0  ~/.config/i3/config
+|4,39,182,0,1510628051,"~/.config/i3/config"
+-'  175  27  ~/.config/i3/config
+|4,39,175,27,1510627664,"~/.config/i3/config"
+-'  173  0  ~/.config/i3/config
+|4,39,173,0,1510627332,"~/.config/i3/config"
+-'  168  3  ~/.config/i3/config
+|4,39,168,3,1510627330,"~/.config/i3/config"
+-'  159  9  ~/.config/i3/config
+|4,39,159,9,1510627288,"~/.config/i3/config"
+-'  114  0  ~/.config/i3/config
+|4,39,114,0,1510627175,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1510626989,"~/.config/i3/config"
+-'  103  0  ~/.config/i3/config
+|4,39,103,0,1510626987,"~/.config/i3/config"
+-'  167  10  ~/.config/i3/config
+|4,39,167,10,1510626940,"~/.config/i3/config"
+-'  183  0  ~/.config/i3/config
+|4,39,183,0,1510626930,"~/.config/i3/config"
+-'  141  2  ~/.config/i3/config
+|4,39,141,2,1510626925,"~/.config/i3/config"
+-'  2  0  ~/.config/i3/config
+|4,39,2,0,1510626884,"~/.config/i3/config"
+-'  181  0  ~/.config/i3/config
+|4,39,181,0,1510626882,"~/.config/i3/config"
+-'  59  51  ~/.config/i3/config
+|4,39,59,51,1510626877,"~/.config/i3/config"
+-'  421  0  ~/.irssi/config
+|4,39,421,0,1510505845,"~/.irssi/config"
+-'  421  0  ~/.irssi/config
+|4,39,421,0,1510505845,"~/.irssi/config"
+-'  84  11  ~/.irssi/config
+|4,39,84,11,1510505844,"~/.irssi/config"
+-'  84  11  ~/.irssi/config
+|4,39,84,11,1510505844,"~/.irssi/config"
+-'  1  0  ~/.irssi/config
+|4,39,1,0,1510505839,"~/.irssi/config"
+-'  1  0  ~/.irssi/config
+|4,39,1,0,1510505839,"~/.irssi/config"
+-'  2  0  ~/.irssi/default.theme
+|4,39,2,0,1510505836,"~/.irssi/default.theme"
+-'  2  0  ~/.irssi/default.theme
+|4,39,2,0,1510505836,"~/.irssi/default.theme"
+-'  2  0  ~/.irssi/default.theme
+|4,39,2,0,1510505836,"~/.irssi/default.theme"
+-'  2  0  ~/.irssi/default.theme
+|4,39,2,0,1510505836,"~/.irssi/default.theme"
+-'  258  0  ~/.irssi/default.theme
+|4,39,258,0,1510505832,"~/.irssi/default.theme"
+-'  258  0  ~/.irssi/default.theme
+|4,39,258,0,1510505832,"~/.irssi/default.theme"
+-'  258  0  ~/.irssi/default.theme
+|4,39,258,0,1510505832,"~/.irssi/default.theme"
+-'  258  0  ~/.irssi/default.theme
+|4,39,258,0,1510505832,"~/.irssi/default.theme"
+-'  1  0  ~/.irssi/default.theme
+|4,39,1,0,1510505829,"~/.irssi/default.theme"
+-'  1  0  ~/.irssi/default.theme
+|4,39,1,0,1510505829,"~/.irssi/default.theme"
+-'  1  0  ~/.irssi/default.theme
+|4,39,1,0,1510505829,"~/.irssi/default.theme"
+-'  1  0  ~/.irssi/default.theme
+|4,39,1,0,1510505829,"~/.irssi/default.theme"
+-'  1  22  ~/.xmomaprc
+|4,39,1,22,1510436398,"~/.xmomaprc"
+-'  1  22  ~/.xmomaprc
+|4,39,1,22,1510436398,"~/.xmomaprc"
+-'  1  22  ~/.xmomaprc
+|4,39,1,22,1510436398,"~/.xmomaprc"
+-'  1  22  ~/.xmomaprc
+|4,39,1,22,1510436398,"~/.xmomaprc"
+-'  1  22  ~/.xmomaprc
+|4,39,1,22,1510436398,"~/.xmomaprc"
+-'  1  22  ~/.xmomaprc
+|4,39,1,22,1510436398,"~/.xmomaprc"
+-'  1  22  ~/.xmomaprc
+|4,39,1,22,1510436398,"~/.xmomaprc"
+-'  1  22  ~/.xmomaprc
+|4,39,1,22,1510436398,"~/.xmomaprc"
+-'  20  21  ~/.xinitrc
+|4,39,20,21,1510436196,"~/.xinitrc"
+-'  20  21  ~/.xinitrc
+|4,39,20,21,1510436196,"~/.xinitrc"
+-'  20  21  ~/.xinitrc
+|4,39,20,21,1510436196,"~/.xinitrc"
+-'  20  21  ~/.xinitrc
+|4,39,20,21,1510436196,"~/.xinitrc"
+-'  20  21  ~/.xinitrc
+|4,39,20,21,1510436196,"~/.xinitrc"
+-'  20  21  ~/.xinitrc
+|4,39,20,21,1510436196,"~/.xinitrc"
+-'  20  21  ~/.xinitrc
+|4,39,20,21,1510436196,"~/.xinitrc"
+-'  20  21  ~/.xinitrc
+|4,39,20,21,1510436196,"~/.xinitrc"
+-'  19  21  ~/.xinitrc
+|4,39,19,21,1510436190,"~/.xinitrc"
+-'  19  21  ~/.xinitrc
+|4,39,19,21,1510436190,"~/.xinitrc"
+-'  19  21  ~/.xinitrc
+|4,39,19,21,1510436190,"~/.xinitrc"
+-'  19  21  ~/.xinitrc
+|4,39,19,21,1510436190,"~/.xinitrc"
+-'  19  21  ~/.xinitrc
+|4,39,19,21,1510436190,"~/.xinitrc"
+-'  19  21  ~/.xinitrc
+|4,39,19,21,1510436190,"~/.xinitrc"
+-'  19  21  ~/.xinitrc
+|4,39,19,21,1510436190,"~/.xinitrc"
+-'  19  21  ~/.xinitrc
+|4,39,19,21,1510436190,"~/.xinitrc"
+-'  19  21  ~/.xinitrc
+|4,39,19,21,1510436109,"~/.xinitrc"
+-'  19  21  ~/.xinitrc
+|4,39,19,21,1510436109,"~/.xinitrc"
+-'  19  21  ~/.xinitrc
+|4,39,19,21,1510436109,"~/.xinitrc"
+-'  19  21  ~/.xinitrc
+|4,39,19,21,1510436109,"~/.xinitrc"
+-'  19  21  ~/.xinitrc
+|4,39,19,21,1510436109,"~/.xinitrc"
+-'  19  21  ~/.xinitrc
+|4,39,19,21,1510436109,"~/.xinitrc"
+-'  19  21  ~/.xinitrc
+|4,39,19,21,1510436109,"~/.xinitrc"
+-'  19  21  ~/.xinitrc
+|4,39,19,21,1510436109,"~/.xinitrc"
+-'  30  2  ~/.xinitrc
+|4,39,30,2,1510436065,"~/.xinitrc"
+-'  30  2  ~/.xinitrc
+|4,39,30,2,1510436065,"~/.xinitrc"
+-'  30  2  ~/.xinitrc
+|4,39,30,2,1510436065,"~/.xinitrc"
+-'  30  2  ~/.xinitrc
+|4,39,30,2,1510436065,"~/.xinitrc"
+-'  30  2  ~/.xinitrc
+|4,39,30,2,1510436065,"~/.xinitrc"
+-'  30  2  ~/.xinitrc
+|4,39,30,2,1510436065,"~/.xinitrc"
+-'  30  2  ~/.xinitrc
+|4,39,30,2,1510436065,"~/.xinitrc"
+-'  30  2  ~/.xinitrc
+|4,39,30,2,1510436065,"~/.xinitrc"
+-'  30  2  ~/.xinitrc
+|4,39,30,2,1510436065,"~/.xinitrc"
+-'  30  2  ~/.xinitrc
+|4,39,30,2,1510436065,"~/.xinitrc"
+-'  30  2  ~/.xinitrc
+|4,39,30,2,1510436065,"~/.xinitrc"
+-'  30  2  ~/.xinitrc
+|4,39,30,2,1510436065,"~/.xinitrc"
+-'  30  2  ~/.xinitrc
+|4,39,30,2,1510436065,"~/.xinitrc"
+-'  30  2  ~/.xinitrc
+|4,39,30,2,1510436065,"~/.xinitrc"
+-'  30  2  ~/.xinitrc
+|4,39,30,2,1510436065,"~/.xinitrc"
+-'  30  2  ~/.xinitrc
+|4,39,30,2,1510436065,"~/.xinitrc"
+-'  1  0  ~/.config/profanity/profrc
+|4,39,1,0,1510434235,"~/.config/profanity/profrc"
+-'  1  0  ~/.config/profanity/profrc
+|4,39,1,0,1510434235,"~/.config/profanity/profrc"
+-'  1  0  ~/.config/profanity/profrc
+|4,39,1,0,1510434235,"~/.config/profanity/profrc"
+-'  1  0  ~/.config/profanity/profrc
+|4,39,1,0,1510434235,"~/.config/profanity/profrc"
+-'  1  0  ~/.config/profanity/profrc
+|4,39,1,0,1510434235,"~/.config/profanity/profrc"
+-'  1  0  ~/.config/profanity/profrc
+|4,39,1,0,1510434235,"~/.config/profanity/profrc"
+-'  1  0  ~/.config/profanity/profrc
+|4,39,1,0,1510434235,"~/.config/profanity/profrc"
+-'  1  0  ~/.config/profanity/profrc
+|4,39,1,0,1510434235,"~/.config/profanity/profrc"
+-'  1  0  ~/.config/profanity/profrc
+|4,39,1,0,1510434235,"~/.config/profanity/profrc"
+-'  1  0  ~/.config/profanity/profrc
+|4,39,1,0,1510434235,"~/.config/profanity/profrc"
+-'  1  0  ~/.config/profanity/profrc
+|4,39,1,0,1510434235,"~/.config/profanity/profrc"
+-'  1  0  ~/.config/profanity/profrc
+|4,39,1,0,1510434235,"~/.config/profanity/profrc"
+-'  1  0  ~/.config/profanity/profrc
+|4,39,1,0,1510434235,"~/.config/profanity/profrc"
+-'  1  0  ~/.config/profanity/profrc
+|4,39,1,0,1510434235,"~/.config/profanity/profrc"
+-'  1  0  ~/.config/profanity/profrc
+|4,39,1,0,1510434235,"~/.config/profanity/profrc"
+-'  1  0  ~/.config/profanity/profrc
+|4,39,1,0,1510434235,"~/.config/profanity/profrc"
+-'  1  0  ~/.config/profanity/profrc
+|4,39,1,0,1510434235,"~/.config/profanity/profrc"
+-'  1  0  ~/.config/profanity/profrc
+|4,39,1,0,1510434235,"~/.config/profanity/profrc"
+-'  1  0  ~/.config/profanity/profrc
+|4,39,1,0,1510434235,"~/.config/profanity/profrc"
+-'  1  0  ~/.config/profanity/profrc
+|4,39,1,0,1510434235,"~/.config/profanity/profrc"
 
 # History of marks within files (newest to oldest):
+
+> ~/.config/i3/config
+	*	1510627721	0
+	"	182	0
+	^	179	28
+	.	179	27
+	+	183	0
+	+	181	23
+	+	183	0
+	+	183	17
+	+	183	0
+	+	183	12
+	+	183	11
+	+	183	12
+	+	168	0
+	+	183	11
+	+	183	0
+	+	184	0
+	+	36	17
+	+	36	0
+	+	16	12
+	+	18	0
+	+	16	26
+	+	34	29
+	+	36	40
+	+	36	17
+	+	36	13
+	+	36	25
+	+	36	45
+	+	16	0
+	+	36	48
+	+	36	13
+	+	36	0
+	+	183	0
+	+	160	0
+	+	68	0
+	+	70	0
+	+	71	0
+	+	72	0
+	+	64	0
+	+	65	0
+	+	66	0
+	+	67	0
+	+	69	12
+	+	70	11
+	+	71	11
+	+	72	11
+	+	146	0
+	+	147	0
+	+	148	0
+	+	149	0
+	+	150	0
+	+	151	0
+	+	152	0
+	+	153	0
+	+	154	0
+	+	155	0
+	+	156	0
+	+	157	0
+	+	158	0
+	+	159	0
+	+	160	0
+	+	161	0
+	+	162	0
+	+	163	0
+	+	164	0
+	+	181	0
+	+	98	15
+	+	54	75
+	+	55	75
+	+	56	66
+	+	60	9
+	+	62	0
+	+	64	0
+	+	59	0
+	+	60	0
+	+	57	21
+	+	58	21
+	+	61	0
+	+	58	52
+	+	57	26
+	+	59	26
+	+	57	50
+	+	60	0
+	+	59	51
+	+	185	0
+	+	183	0
+	+	106	13
+	+	41	14
+	+	98	15
+	+	103	19
+	+	112	0
+	+	159	0
+	+	180	0
+	+	170	0
+	+	171	0
+	+	175	27
+	+	176	23
+	+	168	0
+	+	176	35
+	+	179	33
+	+	172	33
+	+	176	34
+	+	177	35
+	+	175	0
+	+	179	27
+
+> ~/.irssi/config
+	*	1510505844	0
+	"	421	0
+
+> ~/.irssi/default.theme
+	*	1510505834	0
+	"	2	0
+
+> ~/.xmomaprc
+	*	1510436397	0
+	"	1	22
+	^	1	23
+	.	1	22
+	+	1	22
+
+> ~/.xinitrc
+	*	1510436390	0
+	"	29	0
+	.	30	0
+	+	30	2
+	+	15	0
+	+	30	0
+
+> ~/.config/profanity/profrc
+	*	1510434171	0
+	"	1	0
+
+> ~/.ssh/config
+	*	1510433183	0
+	"	112	8
+	^	112	9
+	.	112	8
+	+	2	15
+	+	2	13
+	+	5	0
+	+	2	21
+	+	2	6
+	+	2	31
+	+	114	0
+	+	106	9
+	+	3	0
+	+	118	0
+	+	99	0
+	+	104	0
+	+	103	12
+	+	99	15
+	+	103	13
+	+	106	0
+	+	106	9
+	+	106	0
+	+	113	0
+	+	113	18
+	+	107	0
+	+	113	0
+	+	108	14
+	+	107	25
+	+	107	8
+	+	107	0
+	+	110	10
+	+	90	0
+	+	112	8
 
 > ~/bin/screenrec
 	*	1510270562	0
@@ -548,13 +717,6 @@ $
 	+	18	22
 	+	64	23
 
-> ~/.xinitrc
-	*	1510269102	0
-	"	30	2
-	^	30	3
-	.	30	2
-	+	30	2
-
 > ~/test.sh
 	*	1510268873	0
 	"	1	112
@@ -565,106 +727,6 @@ $
 	+	1	75
 	+	1	83
 	+	1	113
-
-> ~/.config/i3/config
-	*	1510268050	0
-	"	59	51
-	^	59	52
-	.	59	51
-	+	36	24
-	+	15	12
-	+	48	24
-	+	15	12
-	+	12	43
-	+	15	15
-	+	48	0
-	+	172	11
-	+	172	9
-	+	172	12
-	+	172	11
-	+	172	12
-	+	172	11
-	+	172	12
-	+	172	15
-	+	172	0
-	+	170	23
-	+	172	0
-	+	172	17
-	+	172	0
-	+	172	12
-	+	172	11
-	+	172	12
-	+	168	0
-	+	172	11
-	+	172	0
-	+	173	0
-	+	36	17
-	+	36	0
-	+	16	12
-	+	18	0
-	+	16	26
-	+	34	29
-	+	36	40
-	+	36	17
-	+	36	13
-	+	36	25
-	+	36	45
-	+	16	0
-	+	36	48
-	+	36	13
-	+	36	0
-	+	172	0
-	+	160	0
-	+	68	0
-	+	70	0
-	+	71	0
-	+	72	0
-	+	64	0
-	+	65	0
-	+	66	0
-	+	67	0
-	+	69	12
-	+	70	11
-	+	71	11
-	+	72	11
-	+	146	0
-	+	147	0
-	+	148	0
-	+	149	0
-	+	150	0
-	+	151	0
-	+	152	0
-	+	153	0
-	+	154	0
-	+	155	0
-	+	156	0
-	+	157	0
-	+	158	0
-	+	159	0
-	+	160	0
-	+	161	0
-	+	162	0
-	+	163	0
-	+	164	0
-	+	170	0
-	+	98	15
-	+	54	75
-	+	55	75
-	+	56	66
-	+	60	9
-	+	62	0
-	+	64	0
-	+	59	0
-	+	60	0
-	+	57	21
-	+	58	21
-	+	61	0
-	+	58	52
-	+	57	26
-	+	59	26
-	+	57	50
-	+	60	0
-	+	59	51
 
 > ~/foo.txt
 	*	1510196674	0
@@ -998,38 +1060,6 @@ $
 > /etc/updatedb.conf
 	*	1509211714	0
 	"	6	0
-
-> ~/.ssh/config
-	*	1509211161	0
-	"	107	0
-	^	107	32
-	.	107	0
-	+	2	15
-	+	2	13
-	+	5	0
-	+	2	21
-	+	2	6
-	+	2	31
-	+	110	0
-	+	106	9
-	+	3	0
-	+	114	0
-	+	99	0
-	+	104	0
-	+	103	12
-	+	99	15
-	+	103	13
-	+	106	0
-	+	106	9
-	+	106	0
-	+	109	0
-	+	109	18
-	+	107	0
-	+	109	0
-	+	108	14
-	+	107	25
-	+	107	8
-	+	107	0
 
 > /etc/rc.d/rc.docker
 	*	1509210257	0
@@ -1783,27 +1813,3 @@ $
 > ~/Erlang/stripe/Makefille
 	*	1497731693	0
 	"	1	0
-
-> ~/Erlang/mesgd/Makefile
-	*	1497730950	0
-	"	11	23
-	^	11	24
-	.	11	23
-	+	11	21
-	+	5	0
-	+	11	23
-
-> ~/Downloads/readme.txt
-	*	1497569263	0
-	"	39	40
-
-> /dev/shm/pass.XXXXXXXhpUiSo/da9nXo-intel-partner.txt
-	*	1497280889	0
-	"	1	12
-	^	1	13
-	.	1	12
-	+	1	12
-
-> ~/Erlang/mesgd/src/mesgd_database.erl
-	*	1496270622	0
-	"	66	0
