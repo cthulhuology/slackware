@@ -19,7 +19,8 @@ set $term /home/dave/bin/st
 # is used in the bar {} block below.
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:DejaVu Sans Mono 12
+#font pango:DejaVu Sans Mono 12, Awesome 10
+font pango:Orbitron Sans Mono 12, Awesome 10
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # The font above is very space-efficient, that is, it looks good, sharp and
@@ -51,9 +52,9 @@ bindsym $mod+k focus down
 bindsym $mod+l focus up
 bindsym $mod+semicolon focus right
 
-bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer --allow-boost -i 5
-bindsym XF86AudioLowerVolume exec --no-startup-id pamixer --allow-boost -d 5
-bindsym XF86AudioMute exec --no-startup-id pamixer --allow-boost -t
+bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer -i 5
+bindsym XF86AudioLowerVolume exec --no-startup-id pamixer -d 5
+bindsym XF86AudioMute exec --no-startup-id pamixer -t
 bindsym XF86AudioNext exec --no-startup-id mpc next
 bindsym XF86AudioPlay exec --no-startup-id mpc toggle
 bindsym XF86AudioPrev exec  --no-startup-id mpc prev
@@ -70,8 +71,6 @@ bindsym $mod+Left resize shrink width 10 px or 10 ppt
 bindsym $mod+Down resize grow height 10 px or 10 ppt
 bindsym $mod+Up resize shrink height 10 px or 10 ppt
 bindsym $mod+Right resize grow width 10 px or 10 ppt
-
-
 
 # move focused window
 bindsym $mod+Shift+j move left
@@ -165,18 +164,27 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
+
+set $bg		#000000
+set $text  	#80af80
+set $border	#333333
+set $white	#ffffff
+set $gray	#888888
+set $urgent	#808000
+set $inactive	#222222
+
 bar {
         status_command i3status
 	colors {
 		background #000000
-		statusline #80af80 # light green
+		statusline $text # light green
 		separator #666666
 
-		#		   bg              text
-		focused_workspace  #008800 #206020 #ffffff
-		active_workspace   #333333 #206020 #ffffff
-		inactive_workspace #333333 #222222 #888888
-		urgent_workspace   #333333 #808000 #ffffff
+		#		   border  field   	text
+		focused_workspace  $text   $text   	$bg
+		active_workspace   $border $inactive 	$gray
+		inactive_workspace $border $inactive 	$gray
+		urgent_workspace   $border $urgent 	$white
 	}
 }
 

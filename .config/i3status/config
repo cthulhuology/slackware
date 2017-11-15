@@ -20,7 +20,7 @@ order += "load"
 order += "tztime local"
 
 wireless wlan0 {
-        format_up = "W: (%quality at %essid) %ip"
+        format_up = ": %essid %ip"
         format_down = "W: down"
 }
 
@@ -31,7 +31,9 @@ ethernet vethe0b0ab2 {
 }
 
 battery 0 {
-        format = "%status %percentage %remaining"
+        format = "%status %percentage"
+	status_chr=""
+	status_bat=""
 }
 
 run_watch DHCP {
@@ -47,15 +49,15 @@ tztime local {
 }
 
 load {
-        format = "%1min"
+        format = " %1min"
 }
 
 disk "/" {
-        format = "%avail"
+        format = " %avail"
 }
 
 disk "/home" {
-        format = "%avail"
+        format = " %avail"
 }
 
 volume master {

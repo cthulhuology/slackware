@@ -11,21 +11,27 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/007
+~MSle0~/resize
 
 # Last Substitute Search Pattern:
 ~MSle0&sudo 
 
 # Last Substitute String:
-$ 
+$
 
 # Command Line History (newest to oldest):
 :w
-|2,0,1510627719,,"w"
-:W
-|2,0,1510627671,,"W"
+|2,0,1510704203,,"w"
 :q
-|2,0,1510505836,,"q"
+|2,0,1510703959,,"q"
+:W
+|2,0,1510703924,,"W"
+:sp ~/.config/i3/config
+|2,0,1510703140,,"sp ~/.config/i3/config"
+:vs .config/i3/config
+|2,0,1510702979,,"vs .config/i3/config"
+:sp Code/st/
+|2,0,1510702778,,"sp Code/st/"
 :q!
 |2,0,1510436391,,"q!"
 :sp ~/.xmomaprc
@@ -114,14 +120,34 @@ $
 |2,0,1495751955,,"e ../include/mesgd_user.hrl"
 :sp ../include/mesgd_auth.hrl
 |2,0,1495751804,,"sp ../include/mesgd_auth.hrl"
-:r ../include/mesgd_auth.hrl
-|2,0,1495751739,,"r ../include/mesgd_auth.hrl"
-:sp mesgd_user.erl
-|2,0,1495751640,,"sp mesgd_user.erl"
-:sp src/json.erl
-|2,0,1495503322,,"sp src/json.erl"
 
 # Search String History (newest to oldest):
+?/resize
+|2,1,1510704044,47,"resize"
+?/font
+|2,1,1510703999,47,"font"
+?/10
+|2,1,1510703932,47,"10"
+?/pango
+|2,1,1510703829,47,"pango"
+?/load
+|2,1,1510703519,47,"load"
+?/boost
+|2,1,1510703455,47,"boost"
+?/boot
+|2,1,1510703453,47,"boot"
+?/CHR
+|2,1,1510703389,47,"CHR"
+?/at
+|2,1,1510703363,47,"at"
+?/disk
+|2,1,1510703331,47,"disk"
+?/"
+|2,1,1510702834,47,"\""
+? @$
+|2,1,1510702778,,"@$"
+? \<ffffff\>
+|2,1,1510700921,,"\\<ffffff\\>"
 ?/007
 |2,1,1510627332,47,"007"
 ?/mod+d
@@ -196,32 +222,6 @@ $
 |2,1,1510265841,,".\\%12c"
 ?/pac
 |2,1,1510264489,47,"pac"
-?/pactl
-|2,1,1510264344,47,"pactl"
-?/pavu
-|2,1,1510264340,47,"pavu"
-?/horizon
-|2,1,1510264205,47,"horizon"
-?/Sound
-|2,1,1510264109,47,"Sound"
-?/Media
-|2,1,1510264108,47,"Media"
-?/floating
-|2,1,1510264067,47,"floating"
-?/resize
-|2,1,1510263908,47,"resize"
-?/Left
-|2,1,1510263841,47,"Left"
-?/scratchpad
-|2,1,1510193261,47,"scratchpad"
-?/mod+t
-|2,1,1510193221,47,"mod+t"
-?/mod+b
-|2,1,1510193206,47,"mod+b"
-?/Return
-|2,1,1510193194,47,"Return"
-?/Space
-|2,1,1510193084,47,"Space"
 
 # Expression History (newest to oldest):
 
@@ -231,378 +231,469 @@ $
 
 # Registers:
 "0	CHAR	0
-	 --no-startup-id mpc next
-|3,0,0,0,1,0,1510268047," --no-startup-id mpc next"
-"1	LINE	0
+	Orbitron
+|3,0,0,0,1,0,1510702913,"Orbitron"
+""1	LINE	0
+	
+|3,1,1,1,1,0,1510704099,""
+"2	LINE	0
+	
+|3,0,2,1,1,0,1510704098,""
+"3	LINE	0
+	
+|3,0,3,1,1,0,1510702984,""
+"4	LINE	0
+		font = Orbitron 16, Awesome 8
+|3,0,4,1,1,0,1510702972,"	font = Orbitron 16, Awesome 8"
+"5	LINE	0
+	
+|3,0,5,1,1,0,1510702891,""
+"6	CHAR	0
+	ffffff
+	
+	bar {
+	        status_command i3status
+		colors {
+			background #000000
+			statusline $text # light green
+			separator #666666
+	
+			#		   bg              text
+			focused_workspace  $text   $text   $white
+			active_workspace   $border #206020 
+|3,0,6,0,12,0,1510700921,"ffffff","","bar {","        status_command i3status","	colors {","		background #000000","		statusline $text # light green","		separator #666666","","		#		   bg              text","		focused_workspace  $text   $text   $white","		active_workspace   $border #206020 "
+"7	CHAR	0
+	ffffff
+	
+	bar {
+	        status_command i3status
+		colors {
+			background #000000
+			statusline $text # light green
+			separator #666666
+	
+			#		   bg              text
+			focused_workspace  $text   $text   $white
+			active_workspace   $border #206020 
+|3,0,7,0,12,0,1510700916,"ffffff","","bar {","        status_command i3status","	colors {","		background #000000","		statusline $text # light green","		separator #666666","","		#		   bg              text","		focused_workspace  $text   $text   $white","		active_workspace   $border #206020 "
+"8	CHAR	0
+	ffffff
+	
+	bar {
+	        status_command i3status
+		colors {
+			background #000000
+			statusline $text # light green
+			separator #666666
+	
+			#		   bg              text
+			focused_workspace  $text   $text   
+|3,0,8,0,11,0,1510700905,"ffffff","","bar {","        status_command i3status","	colors {","		background #000000","		statusline $text # light green","		separator #666666","","		#		   bg              text","		focused_workspace  $text   $text   "
+"9	LINE	0
 	#bindsym $mod+d focus child
 	
-|3,0,1,1,2,0,1510627174,"#bindsym $mod+d focus child",""
-"2	LINE	0
-	order +=
-|3,0,2,1,1,0,1510269152,"order +="
-"3	LINE	0
-	bindsym XF
-|3,0,3,1,1,0,1510268006,"bindsym XF"
-"4	LINE	0
-	mixer_type "software"
-|3,0,4,1,1,0,1510267777,"mixer_type \"software\""
-"5	LINE	0
-	db_file "~/.config/mpd/database"
-|3,0,5,1,1,0,1510266796,"db_file \"~/.config/mpd/database\""
-"6	LINE	0
-	
-|3,0,6,1,1,0,1510266552,""
-"7	LINE	0
-		i3bar_command  i3bar -t
-|3,0,7,1,1,0,1510263926,"	i3bar_command  i3bar -t"
-"8	CHAR	0
-	      bindsym Left resize shrink width 10 px or 10 ppt
-	        bindsym Down resize grow height 10 px or 10 ppt
-	        bindsym Up resize shrink height 10 px or 10 ppt
-	        bindsym Right resize grow width 10 px or 10 ppt
-	
-	
-|3,0,8,0,6,0,1510263866,"      bindsym Left resize shrink width 10 px or 10 ppt","        bindsym Down resize grow height 10 px or 10 ppt","        bindsym Up resize shrink height 10 px or 10 ppt","        bindsym Right resize grow width 10 px or 10 ppt","",""
-"9	LINE	0
-	#smart_borders on
-|3,0,9,1,1,0,1510194120,"#smart_borders on"
-""-	CHAR	0
-	a
-|3,1,36,0,1,0,1510627715,"a"
+|3,0,9,1,2,0,1510627174,"#bindsym $mod+d focus child",""
+"-	CHAR	0
+	grow
+|3,0,36,0,1,0,1510704055,"grow"
 
 # File marks:
 'Z  63  0  ~/BPS/rt/share/html/Admin/Users/Modify.html
 |4,90,63,0,1493912439,"~/BPS/rt/share/html/Admin/Users/Modify.html"
-'0  182  0  ~/.config/i3/config
-|4,48,182,0,1510628051,"~/.config/i3/config"
-'1  421  0  ~/.irssi/config
-|4,49,421,0,1510505845,"~/.irssi/config"
-'2  2  0  ~/.irssi/default.theme
-|4,50,2,0,1510505836,"~/.irssi/default.theme"
-'3  1  22  ~/.xmomaprc
-|4,51,1,22,1510436398,"~/.xmomaprc"
-'4  19  21  ~/.xinitrc
-|4,52,19,21,1510436109,"~/.xinitrc"
-'5  19  21  ~/.xinitrc
-|4,53,19,21,1510436109,"~/.xinitrc"
-'6  1  0  ~/.config/profanity/profrc
-|4,54,1,0,1510434235,"~/.config/profanity/profrc"
-'7  112  8  ~/.ssh/config
-|4,55,112,8,1510433184,"~/.ssh/config"
-'8  1  153  ~/bin/screenrec
-|4,56,1,153,1510270563,"~/bin/screenrec"
-'9  1  105  ~/bin/screenrec
-|4,57,1,105,1510270461,"~/bin/screenrec"
+'0  191  21  ~/.config/i3/config
+|4,48,191,21,1510704257,"~/.config/i3/config"
+'1  2  31  ~/foo.txt
+|4,49,2,31,1510703959,"~/foo.txt"
+'2  44  31  ~/.config/i3/config
+|4,50,44,31,1510703947,"~/.config/i3/config"
+'3  44  31  ~/.config/i3/config
+|4,51,44,31,1510703947,"~/.config/i3/config"
+'4  44  31  ~/.config/i3/config
+|4,52,44,31,1510703944,"~/.config/i3/config"
+'5  44  31  ~/.config/i3/config
+|4,53,44,31,1510703944,"~/.config/i3/config"
+'6  1  0  ~/.config/i3status/config
+|4,54,1,0,1510703898,"~/.config/i3status/config"
+'7  29  0  ~/.config/i3status/config
+|4,55,29,0,1510703877,"~/.config/i3status/config"
+'8  29  0  ~/.config/i3status/config
+|4,56,29,0,1510703877,"~/.config/i3status/config"
+'9  41  0  ~/.config/i3status/config
+|4,57,41,0,1510703113,"~/.config/i3status/config"
 
 # Jumplist (newest first):
--'  182  0  ~/.config/i3/config
-|4,39,182,0,1510628051,"~/.config/i3/config"
--'  175  27  ~/.config/i3/config
-|4,39,175,27,1510627664,"~/.config/i3/config"
--'  173  0  ~/.config/i3/config
-|4,39,173,0,1510627332,"~/.config/i3/config"
--'  168  3  ~/.config/i3/config
-|4,39,168,3,1510627330,"~/.config/i3/config"
--'  159  9  ~/.config/i3/config
-|4,39,159,9,1510627288,"~/.config/i3/config"
--'  114  0  ~/.config/i3/config
-|4,39,114,0,1510627175,"~/.config/i3/config"
+-'  191  21  ~/.config/i3/config
+|4,39,191,21,1510704257,"~/.config/i3/config"
+-'  141  41  ~/.config/i3/config
+|4,39,141,41,1510704161,"~/.config/i3/config"
+-'  73  26  ~/.config/i3/config
+|4,39,73,26,1510704075,"~/.config/i3/config"
 -'  1  0  ~/.config/i3/config
-|4,39,1,0,1510626989,"~/.config/i3/config"
--'  103  0  ~/.config/i3/config
-|4,39,103,0,1510626987,"~/.config/i3/config"
--'  167  10  ~/.config/i3/config
-|4,39,167,10,1510626940,"~/.config/i3/config"
--'  183  0  ~/.config/i3/config
-|4,39,183,0,1510626930,"~/.config/i3/config"
--'  141  2  ~/.config/i3/config
-|4,39,141,2,1510626925,"~/.config/i3/config"
+|4,39,1,0,1510704045,"~/.config/i3/config"
+-'  145  2  ~/.config/i3/config
+|4,39,145,2,1510704045,"~/.config/i3/config"
+-'  41  33  ~/.config/i3/config
+|4,39,41,33,1510704011,"~/.config/i3/config"
+-'  56  41  ~/.config/i3/config
+|4,39,56,41,1510703999,"~/.config/i3/config"
+-'  47  31  ~/.config/i3/config
+|4,39,47,31,1510703979,"~/.config/i3/config"
+-'  44  31  ~/.config/i3/config
+|4,39,44,31,1510703977,"~/.config/i3/config"
+-'  2  31  ~/foo.txt
+|4,39,2,31,1510703959,"~/foo.txt"
+-'  2  31  ~/foo.txt
+|4,39,2,31,1510703959,"~/foo.txt"
+-'  44  31  ~/.config/i3/config
+|4,39,44,31,1510703947,"~/.config/i3/config"
+-'  44  31  ~/.config/i3/config
+|4,39,44,31,1510703947,"~/.config/i3/config"
+-'  44  31  ~/.config/i3/config
+|4,39,44,31,1510703944,"~/.config/i3/config"
+-'  44  31  ~/.config/i3/config
+|4,39,44,31,1510703944,"~/.config/i3/config"
 -'  2  0  ~/.config/i3/config
-|4,39,2,0,1510626884,"~/.config/i3/config"
--'  181  0  ~/.config/i3/config
-|4,39,181,0,1510626882,"~/.config/i3/config"
--'  59  51  ~/.config/i3/config
-|4,39,59,51,1510626877,"~/.config/i3/config"
--'  421  0  ~/.irssi/config
-|4,39,421,0,1510505845,"~/.irssi/config"
--'  421  0  ~/.irssi/config
-|4,39,421,0,1510505845,"~/.irssi/config"
--'  84  11  ~/.irssi/config
-|4,39,84,11,1510505844,"~/.irssi/config"
--'  84  11  ~/.irssi/config
-|4,39,84,11,1510505844,"~/.irssi/config"
--'  1  0  ~/.irssi/config
-|4,39,1,0,1510505839,"~/.irssi/config"
--'  1  0  ~/.irssi/config
-|4,39,1,0,1510505839,"~/.irssi/config"
--'  2  0  ~/.irssi/default.theme
-|4,39,2,0,1510505836,"~/.irssi/default.theme"
--'  2  0  ~/.irssi/default.theme
-|4,39,2,0,1510505836,"~/.irssi/default.theme"
--'  2  0  ~/.irssi/default.theme
-|4,39,2,0,1510505836,"~/.irssi/default.theme"
--'  2  0  ~/.irssi/default.theme
-|4,39,2,0,1510505836,"~/.irssi/default.theme"
--'  258  0  ~/.irssi/default.theme
-|4,39,258,0,1510505832,"~/.irssi/default.theme"
--'  258  0  ~/.irssi/default.theme
-|4,39,258,0,1510505832,"~/.irssi/default.theme"
--'  258  0  ~/.irssi/default.theme
-|4,39,258,0,1510505832,"~/.irssi/default.theme"
--'  258  0  ~/.irssi/default.theme
-|4,39,258,0,1510505832,"~/.irssi/default.theme"
--'  1  0  ~/.irssi/default.theme
-|4,39,1,0,1510505829,"~/.irssi/default.theme"
--'  1  0  ~/.irssi/default.theme
-|4,39,1,0,1510505829,"~/.irssi/default.theme"
--'  1  0  ~/.irssi/default.theme
-|4,39,1,0,1510505829,"~/.irssi/default.theme"
--'  1  0  ~/.irssi/default.theme
-|4,39,1,0,1510505829,"~/.irssi/default.theme"
--'  1  22  ~/.xmomaprc
-|4,39,1,22,1510436398,"~/.xmomaprc"
--'  1  22  ~/.xmomaprc
-|4,39,1,22,1510436398,"~/.xmomaprc"
--'  1  22  ~/.xmomaprc
-|4,39,1,22,1510436398,"~/.xmomaprc"
--'  1  22  ~/.xmomaprc
-|4,39,1,22,1510436398,"~/.xmomaprc"
--'  1  22  ~/.xmomaprc
-|4,39,1,22,1510436398,"~/.xmomaprc"
--'  1  22  ~/.xmomaprc
-|4,39,1,22,1510436398,"~/.xmomaprc"
--'  1  22  ~/.xmomaprc
-|4,39,1,22,1510436398,"~/.xmomaprc"
--'  1  22  ~/.xmomaprc
-|4,39,1,22,1510436398,"~/.xmomaprc"
--'  20  21  ~/.xinitrc
-|4,39,20,21,1510436196,"~/.xinitrc"
--'  20  21  ~/.xinitrc
-|4,39,20,21,1510436196,"~/.xinitrc"
--'  20  21  ~/.xinitrc
-|4,39,20,21,1510436196,"~/.xinitrc"
--'  20  21  ~/.xinitrc
-|4,39,20,21,1510436196,"~/.xinitrc"
--'  20  21  ~/.xinitrc
-|4,39,20,21,1510436196,"~/.xinitrc"
--'  20  21  ~/.xinitrc
-|4,39,20,21,1510436196,"~/.xinitrc"
--'  20  21  ~/.xinitrc
-|4,39,20,21,1510436196,"~/.xinitrc"
--'  20  21  ~/.xinitrc
-|4,39,20,21,1510436196,"~/.xinitrc"
--'  19  21  ~/.xinitrc
-|4,39,19,21,1510436190,"~/.xinitrc"
--'  19  21  ~/.xinitrc
-|4,39,19,21,1510436190,"~/.xinitrc"
--'  19  21  ~/.xinitrc
-|4,39,19,21,1510436190,"~/.xinitrc"
--'  19  21  ~/.xinitrc
-|4,39,19,21,1510436190,"~/.xinitrc"
--'  19  21  ~/.xinitrc
-|4,39,19,21,1510436190,"~/.xinitrc"
--'  19  21  ~/.xinitrc
-|4,39,19,21,1510436190,"~/.xinitrc"
--'  19  21  ~/.xinitrc
-|4,39,19,21,1510436190,"~/.xinitrc"
--'  19  21  ~/.xinitrc
-|4,39,19,21,1510436190,"~/.xinitrc"
--'  19  21  ~/.xinitrc
-|4,39,19,21,1510436109,"~/.xinitrc"
--'  19  21  ~/.xinitrc
-|4,39,19,21,1510436109,"~/.xinitrc"
--'  19  21  ~/.xinitrc
-|4,39,19,21,1510436109,"~/.xinitrc"
--'  19  21  ~/.xinitrc
-|4,39,19,21,1510436109,"~/.xinitrc"
--'  19  21  ~/.xinitrc
-|4,39,19,21,1510436109,"~/.xinitrc"
--'  19  21  ~/.xinitrc
-|4,39,19,21,1510436109,"~/.xinitrc"
--'  19  21  ~/.xinitrc
-|4,39,19,21,1510436109,"~/.xinitrc"
--'  19  21  ~/.xinitrc
-|4,39,19,21,1510436109,"~/.xinitrc"
--'  30  2  ~/.xinitrc
-|4,39,30,2,1510436065,"~/.xinitrc"
--'  30  2  ~/.xinitrc
-|4,39,30,2,1510436065,"~/.xinitrc"
--'  30  2  ~/.xinitrc
-|4,39,30,2,1510436065,"~/.xinitrc"
--'  30  2  ~/.xinitrc
-|4,39,30,2,1510436065,"~/.xinitrc"
--'  30  2  ~/.xinitrc
-|4,39,30,2,1510436065,"~/.xinitrc"
--'  30  2  ~/.xinitrc
-|4,39,30,2,1510436065,"~/.xinitrc"
--'  30  2  ~/.xinitrc
-|4,39,30,2,1510436065,"~/.xinitrc"
--'  30  2  ~/.xinitrc
-|4,39,30,2,1510436065,"~/.xinitrc"
--'  30  2  ~/.xinitrc
-|4,39,30,2,1510436065,"~/.xinitrc"
--'  30  2  ~/.xinitrc
-|4,39,30,2,1510436065,"~/.xinitrc"
--'  30  2  ~/.xinitrc
-|4,39,30,2,1510436065,"~/.xinitrc"
--'  30  2  ~/.xinitrc
-|4,39,30,2,1510436065,"~/.xinitrc"
--'  30  2  ~/.xinitrc
-|4,39,30,2,1510436065,"~/.xinitrc"
--'  30  2  ~/.xinitrc
-|4,39,30,2,1510436065,"~/.xinitrc"
--'  30  2  ~/.xinitrc
-|4,39,30,2,1510436065,"~/.xinitrc"
--'  30  2  ~/.xinitrc
-|4,39,30,2,1510436065,"~/.xinitrc"
--'  1  0  ~/.config/profanity/profrc
-|4,39,1,0,1510434235,"~/.config/profanity/profrc"
--'  1  0  ~/.config/profanity/profrc
-|4,39,1,0,1510434235,"~/.config/profanity/profrc"
--'  1  0  ~/.config/profanity/profrc
-|4,39,1,0,1510434235,"~/.config/profanity/profrc"
--'  1  0  ~/.config/profanity/profrc
-|4,39,1,0,1510434235,"~/.config/profanity/profrc"
--'  1  0  ~/.config/profanity/profrc
-|4,39,1,0,1510434235,"~/.config/profanity/profrc"
--'  1  0  ~/.config/profanity/profrc
-|4,39,1,0,1510434235,"~/.config/profanity/profrc"
--'  1  0  ~/.config/profanity/profrc
-|4,39,1,0,1510434235,"~/.config/profanity/profrc"
--'  1  0  ~/.config/profanity/profrc
-|4,39,1,0,1510434235,"~/.config/profanity/profrc"
--'  1  0  ~/.config/profanity/profrc
-|4,39,1,0,1510434235,"~/.config/profanity/profrc"
--'  1  0  ~/.config/profanity/profrc
-|4,39,1,0,1510434235,"~/.config/profanity/profrc"
--'  1  0  ~/.config/profanity/profrc
-|4,39,1,0,1510434235,"~/.config/profanity/profrc"
--'  1  0  ~/.config/profanity/profrc
-|4,39,1,0,1510434235,"~/.config/profanity/profrc"
--'  1  0  ~/.config/profanity/profrc
-|4,39,1,0,1510434235,"~/.config/profanity/profrc"
--'  1  0  ~/.config/profanity/profrc
-|4,39,1,0,1510434235,"~/.config/profanity/profrc"
--'  1  0  ~/.config/profanity/profrc
-|4,39,1,0,1510434235,"~/.config/profanity/profrc"
--'  1  0  ~/.config/profanity/profrc
-|4,39,1,0,1510434235,"~/.config/profanity/profrc"
--'  1  0  ~/.config/profanity/profrc
-|4,39,1,0,1510434235,"~/.config/profanity/profrc"
--'  1  0  ~/.config/profanity/profrc
-|4,39,1,0,1510434235,"~/.config/profanity/profrc"
--'  1  0  ~/.config/profanity/profrc
-|4,39,1,0,1510434235,"~/.config/profanity/profrc"
--'  1  0  ~/.config/profanity/profrc
-|4,39,1,0,1510434235,"~/.config/profanity/profrc"
+|4,39,2,0,1510703932,"~/.config/i3/config"
+-'  2  0  ~/.config/i3/config
+|4,39,2,0,1510703932,"~/.config/i3/config"
+-'  2  0  ~/.config/i3/config
+|4,39,2,0,1510703932,"~/.config/i3/config"
+-'  2  0  ~/.config/i3/config
+|4,39,2,0,1510703932,"~/.config/i3/config"
+-'  2  0  ~/.config/i3/config
+|4,39,2,0,1510703932,"~/.config/i3/config"
+-'  40  0  ~/.config/i3/config
+|4,39,40,0,1510703931,"~/.config/i3/config"
+-'  40  0  ~/.config/i3/config
+|4,39,40,0,1510703931,"~/.config/i3/config"
+-'  40  0  ~/.config/i3/config
+|4,39,40,0,1510703931,"~/.config/i3/config"
+-'  40  0  ~/.config/i3/config
+|4,39,40,0,1510703931,"~/.config/i3/config"
+-'  40  0  ~/.config/i3/config
+|4,39,40,0,1510703931,"~/.config/i3/config"
+-'  23  43  ~/.config/i3/config
+|4,39,23,43,1510703901,"~/.config/i3/config"
+-'  23  43  ~/.config/i3/config
+|4,39,23,43,1510703901,"~/.config/i3/config"
+-'  23  43  ~/.config/i3/config
+|4,39,23,43,1510703901,"~/.config/i3/config"
+-'  23  43  ~/.config/i3/config
+|4,39,23,43,1510703901,"~/.config/i3/config"
+-'  23  43  ~/.config/i3/config
+|4,39,23,43,1510703901,"~/.config/i3/config"
+-'  1  0  ~/.config/i3status/config
+|4,39,1,0,1510703898,"~/.config/i3status/config"
+-'  1  0  ~/.config/i3status/config
+|4,39,1,0,1510703898,"~/.config/i3status/config"
+-'  1  0  ~/.config/i3status/config
+|4,39,1,0,1510703898,"~/.config/i3status/config"
+-'  1  0  ~/.config/i3status/config
+|4,39,1,0,1510703898,"~/.config/i3status/config"
+-'  1  0  ~/.config/i3status/config
+|4,39,1,0,1510703898,"~/.config/i3status/config"
+-'  1  0  ~/.config/i3status/config
+|4,39,1,0,1510703898,"~/.config/i3status/config"
+-'  1  0  ~/.config/i3status/config
+|4,39,1,0,1510703898,"~/.config/i3status/config"
+-'  1  0  ~/.config/i3status/config
+|4,39,1,0,1510703898,"~/.config/i3status/config"
+-'  1  0  ~/.config/i3status/config
+|4,39,1,0,1510703898,"~/.config/i3status/config"
+-'  1  0  ~/.config/i3status/config
+|4,39,1,0,1510703898,"~/.config/i3status/config"
+-'  1  0  ~/.config/i3status/config
+|4,39,1,0,1510703898,"~/.config/i3status/config"
+-'  1  0  ~/.config/i3status/config
+|4,39,1,0,1510703898,"~/.config/i3status/config"
+-'  1  0  ~/.config/i3status/config
+|4,39,1,0,1510703898,"~/.config/i3status/config"
+-'  1  0  ~/.config/i3status/config
+|4,39,1,0,1510703898,"~/.config/i3status/config"
+-'  1  0  ~/.config/i3status/config
+|4,39,1,0,1510703898,"~/.config/i3status/config"
+-'  1  0  ~/.config/i3status/config
+|4,39,1,0,1510703898,"~/.config/i3status/config"
+-'  45  0  ~/.config/i3status/config
+|4,39,45,0,1510703896,"~/.config/i3status/config"
+-'  45  0  ~/.config/i3status/config
+|4,39,45,0,1510703896,"~/.config/i3status/config"
+-'  45  0  ~/.config/i3status/config
+|4,39,45,0,1510703896,"~/.config/i3status/config"
+-'  45  0  ~/.config/i3status/config
+|4,39,45,0,1510703896,"~/.config/i3status/config"
+-'  45  0  ~/.config/i3status/config
+|4,39,45,0,1510703896,"~/.config/i3status/config"
+-'  45  0  ~/.config/i3status/config
+|4,39,45,0,1510703896,"~/.config/i3status/config"
+-'  45  0  ~/.config/i3status/config
+|4,39,45,0,1510703896,"~/.config/i3status/config"
+-'  45  0  ~/.config/i3status/config
+|4,39,45,0,1510703896,"~/.config/i3status/config"
+-'  45  0  ~/.config/i3status/config
+|4,39,45,0,1510703896,"~/.config/i3status/config"
+-'  45  0  ~/.config/i3status/config
+|4,39,45,0,1510703896,"~/.config/i3status/config"
+-'  45  0  ~/.config/i3status/config
+|4,39,45,0,1510703896,"~/.config/i3status/config"
+-'  45  0  ~/.config/i3status/config
+|4,39,45,0,1510703896,"~/.config/i3status/config"
+-'  45  0  ~/.config/i3status/config
+|4,39,45,0,1510703896,"~/.config/i3status/config"
+-'  45  0  ~/.config/i3status/config
+|4,39,45,0,1510703896,"~/.config/i3status/config"
+-'  45  0  ~/.config/i3status/config
+|4,39,45,0,1510703896,"~/.config/i3status/config"
+-'  45  0  ~/.config/i3status/config
+|4,39,45,0,1510703896,"~/.config/i3status/config"
+-'  29  0  ~/.config/i3status/config
+|4,39,29,0,1510703892,"~/.config/i3status/config"
+-'  29  0  ~/.config/i3status/config
+|4,39,29,0,1510703892,"~/.config/i3status/config"
+-'  29  0  ~/.config/i3status/config
+|4,39,29,0,1510703892,"~/.config/i3status/config"
+-'  29  0  ~/.config/i3status/config
+|4,39,29,0,1510703892,"~/.config/i3status/config"
+-'  29  0  ~/.config/i3status/config
+|4,39,29,0,1510703892,"~/.config/i3status/config"
+-'  29  0  ~/.config/i3status/config
+|4,39,29,0,1510703892,"~/.config/i3status/config"
+-'  29  0  ~/.config/i3status/config
+|4,39,29,0,1510703892,"~/.config/i3status/config"
+-'  29  0  ~/.config/i3status/config
+|4,39,29,0,1510703892,"~/.config/i3status/config"
+-'  29  0  ~/.config/i3status/config
+|4,39,29,0,1510703892,"~/.config/i3status/config"
+-'  29  0  ~/.config/i3status/config
+|4,39,29,0,1510703892,"~/.config/i3status/config"
+-'  29  0  ~/.config/i3status/config
+|4,39,29,0,1510703892,"~/.config/i3status/config"
+-'  29  0  ~/.config/i3status/config
+|4,39,29,0,1510703892,"~/.config/i3status/config"
+-'  29  0  ~/.config/i3status/config
+|4,39,29,0,1510703892,"~/.config/i3status/config"
+-'  29  0  ~/.config/i3status/config
+|4,39,29,0,1510703892,"~/.config/i3status/config"
+-'  29  0  ~/.config/i3status/config
+|4,39,29,0,1510703892,"~/.config/i3status/config"
+-'  29  0  ~/.config/i3status/config
+|4,39,29,0,1510703892,"~/.config/i3status/config"
+-'  29  0  ~/.config/i3status/config
+|4,39,29,0,1510703877,"~/.config/i3status/config"
+-'  29  0  ~/.config/i3status/config
+|4,39,29,0,1510703877,"~/.config/i3status/config"
+-'  29  0  ~/.config/i3status/config
+|4,39,29,0,1510703877,"~/.config/i3status/config"
+-'  29  0  ~/.config/i3status/config
+|4,39,29,0,1510703877,"~/.config/i3status/config"
+-'  29  0  ~/.config/i3status/config
+|4,39,29,0,1510703877,"~/.config/i3status/config"
+-'  29  0  ~/.config/i3status/config
+|4,39,29,0,1510703877,"~/.config/i3status/config"
+-'  29  0  ~/.config/i3status/config
+|4,39,29,0,1510703877,"~/.config/i3status/config"
+-'  29  0  ~/.config/i3status/config
+|4,39,29,0,1510703877,"~/.config/i3status/config"
+-'  29  0  ~/.config/i3status/config
+|4,39,29,0,1510703877,"~/.config/i3status/config"
+-'  29  0  ~/.config/i3status/config
+|4,39,29,0,1510703877,"~/.config/i3status/config"
+-'  29  0  ~/.config/i3status/config
+|4,39,29,0,1510703877,"~/.config/i3status/config"
+-'  29  0  ~/.config/i3status/config
+|4,39,29,0,1510703877,"~/.config/i3status/config"
+-'  29  0  ~/.config/i3status/config
+|4,39,29,0,1510703877,"~/.config/i3status/config"
+-'  29  0  ~/.config/i3status/config
+|4,39,29,0,1510703877,"~/.config/i3status/config"
+-'  29  0  ~/.config/i3status/config
+|4,39,29,0,1510703877,"~/.config/i3status/config"
+-'  29  0  ~/.config/i3status/config
+|4,39,29,0,1510703877,"~/.config/i3status/config"
+-'  35  16  ~/.config/i3status/config
+|4,39,35,16,1510703822,"~/.config/i3status/config"
+-'  35  16  ~/.config/i3status/config
+|4,39,35,16,1510703822,"~/.config/i3status/config"
+-'  35  16  ~/.config/i3status/config
+|4,39,35,16,1510703822,"~/.config/i3status/config"
+-'  35  16  ~/.config/i3status/config
+|4,39,35,16,1510703822,"~/.config/i3status/config"
+-'  35  16  ~/.config/i3status/config
+|4,39,35,16,1510703822,"~/.config/i3status/config"
+-'  35  16  ~/.config/i3status/config
+|4,39,35,16,1510703822,"~/.config/i3status/config"
 
 # History of marks within files (newest to oldest):
 
 > ~/.config/i3/config
-	*	1510627721	0
-	"	182	0
-	^	179	28
-	.	179	27
-	+	183	0
-	+	181	23
-	+	183	0
-	+	183	17
-	+	183	0
-	+	183	12
-	+	183	11
-	+	183	12
-	+	168	0
-	+	183	11
-	+	183	0
-	+	184	0
-	+	36	17
-	+	36	0
-	+	16	12
-	+	18	0
-	+	16	26
-	+	34	29
-	+	36	40
-	+	36	17
-	+	36	13
-	+	36	25
-	+	36	45
-	+	16	0
-	+	36	48
-	+	36	13
-	+	36	0
-	+	183	0
-	+	160	0
-	+	68	0
-	+	70	0
-	+	71	0
-	+	72	0
-	+	64	0
-	+	65	0
-	+	66	0
-	+	67	0
-	+	69	12
-	+	70	11
-	+	71	11
-	+	72	11
-	+	146	0
-	+	147	0
-	+	148	0
-	+	149	0
-	+	150	0
-	+	151	0
-	+	152	0
-	+	153	0
-	+	154	0
-	+	155	0
-	+	156	0
-	+	157	0
-	+	158	0
+	*	1510704256	0
+	"	191	21
+	^	73	32
+	.	192	38
 	+	159	0
 	+	160	0
 	+	161	0
 	+	162	0
 	+	163	0
-	+	164	0
-	+	181	0
-	+	98	15
-	+	54	75
+	+	189	0
+	+	97	15
 	+	55	75
-	+	56	66
-	+	60	9
-	+	62	0
-	+	64	0
-	+	59	0
+	+	56	75
+	+	57	66
+	+	61	9
+	+	63	0
+	+	65	0
 	+	60	0
-	+	57	21
-	+	58	21
 	+	61	0
-	+	58	52
-	+	57	26
-	+	59	26
-	+	57	50
-	+	60	0
-	+	59	51
-	+	185	0
-	+	183	0
-	+	106	13
-	+	41	14
-	+	98	15
-	+	103	19
-	+	112	0
-	+	159	0
-	+	180	0
-	+	170	0
+	+	58	21
+	+	59	21
+	+	62	0
+	+	59	52
+	+	58	26
+	+	60	26
+	+	58	50
+	+	61	0
+	+	60	51
+	+	193	0
+	+	191	0
+	+	105	13
+	+	42	14
+	+	97	15
+	+	102	19
+	+	111	0
+	+	158	0
+	+	188	0
+	+	171	12
+	+	171	39
+	+	171	35
+	+	171	12
+	+	171	47
+	+	187	33
+	+	171	45
+	+	171	46
+	+	171	47
+	+	171	12
+	+	187	27
+	+	171	46
+	+	167	0
+	+	169	17
+	+	171	29
+	+	171	46
+	+	170	18
+	+	169	11
+	+	168	15
+	+	171	41
+	+	171	39
+	+	186	21
+	+	187	21
+	+	171	17
+	+	171	48
 	+	171	0
-	+	175	27
-	+	176	23
-	+	168	0
-	+	176	35
-	+	179	33
-	+	172	33
-	+	176	34
-	+	177	35
+	+	171	53
+	+	171	16
+	+	171	54
+	+	171	12
+	+	171	0
+	+	185	42
+	+	187	37
+	+	186	41
+	+	172	16
 	+	175	0
-	+	179	27
+	+	173	18
+	+	187	35
+	+	185	0
+	+	184	39
+	+	183	15
+	+	174	20
+	+	185	37
+	+	186	37
+	+	183	24
+	+	177	0
+	+	184	37
+	+	185	39
+	+	186	39
+	+	187	38
+	+	23	0
+	+	23	5
+	+	22	0
+	+	23	42
+	+	8	0
+	+	23	43
+	+	22	41
+	+	23	0
+	+	22	0
+	+	55	58
+	+	56	58
+	+	57	51
+	+	23	43
+	+	70	28
+	+	70	0
+	+	74	0
+	+	192	38
+
+> ~/foo.txt
+	*	1510703958	0
+	"	2	31
+	^	2	32
+	.	2	17
+	+	2	17
+
+> ~/.config/i3status/config
+	*	1510703896	0
+	"	1	0
+	^	36	17
+	.	36	16
+	+	27	17
+	+	17	0
+	+	21	0
+	+	18	16
+	+	67	0
+	+	18	22
+	+	66	23
+	+	23	21
+	+	9	0
+	+	10	8
+	+	10	0
+	+	14	0
+	+	56	21
+	+	60	21
+	+	23	32
+	+	34	18
+	+	52	21
+	+	35	28
+	+	36	6
+	+	34	24
+	+	35	16
+	+	36	16
+
+> ~/Code/st/config.h
+	*	1510703106	0
+	"	443	0
+	.	9	0
+	+	9	0
+
+> ~/Code/st/st.c
+	*	1510702867	0
+	"	1452	6
+
+> ~/.bashrc
+	*	1510702140	0
+	"	65	21
+	^	65	22
+	.	65	0
+	+	61	42
+	+	65	0
+
+> ~/.Xresources
+	*	1510701868	0
+	"	5	12
+	^	7	13
+	.	7	0
+	+	7	0
+
+> ~/.Xdefaults
+	*	1510701847	0
+	"	1	0
 
 > ~/.irssi/config
 	*	1510505844	0
@@ -704,19 +795,6 @@ $
 	+	11	0
 	+	3	18
 
-> ~/.config/i3status/config
-	*	1510269256	0
-	"	64	23
-	^	18	23
-	.	64	23
-	+	27	17
-	+	17	0
-	+	21	0
-	+	18	16
-	+	65	0
-	+	18	22
-	+	64	23
-
 > ~/test.sh
 	*	1510268873	0
 	"	1	112
@@ -727,13 +805,6 @@ $
 	+	1	75
 	+	1	83
 	+	1	113
-
-> ~/foo.txt
-	*	1510196674	0
-	"	2	31
-	^	2	32
-	.	2	17
-	+	2	17
 
 > ~/Code/i3/README.md
 	*	1510191609	0
@@ -750,13 +821,6 @@ $
 > ~/Code/i3/DEPENDS
 	*	1510191585	0
 	"	3	0
-
-> ~/.bashrc
-	*	1510191525	0
-	"	61	42
-	^	61	43
-	.	61	42
-	+	61	42
 
 > ~/.ssh/known_hosts
 	*	1510188746	0
@@ -1643,173 +1707,4 @@ $
 
 > ~/Code/mruby/MITL
 	*	1498140518	0
-	"	1	0
-
-> ~/Code/mruby/doc/guides/compile.md
-	*	1498140511	0
-	"	455	0
-
-> ~/Erlang/stripe/src/stripe.erl
-	*	1497734513	0
-	"	319	86
-	^	319	87
-	.	319	86
-	+	251	0
-	+	251	85
-	+	252	0
-	+	254	3
-	+	252	53
-	+	255	41
-	+	256	8
-	+	252	0
-	+	256	25
-	+	20	24
-	+	66	27
-	+	67	49
-	+	66	15
-	+	29	0
-	+	20	17
-	+	253	0
-	+	253	1
-	+	252	54
-	+	253	0
-	+	251	18
-	+	253	65
-	+	80	0
-	+	99	0
-	+	121	0
-	+	151	0
-	+	227	19
-	+	78	17
-	+	97	17
-	+	119	17
-	+	149	17
-	+	201	30
-	+	78	31
-	+	97	23
-	+	119	23
-	+	149	23
-	+	227	25
-	+	251	24
-	+	253	25
-	+	250	0
-	+	253	52
-	+	244	18
-	+	246	6
-	+	248	0
-	+	247	43
-	+	246	11
-	+	250	0
-	+	246	26
-	+	247	44
-	+	248	4
-	+	249	0
-	+	248	5
-	+	249	43
-	+	8	6
-	+	309	27
-	+	292	0
-	+	309	3
-	+	293	0
-	+	309	18
-	+	309	41
-	+	309	25
-	+	309	0
-	+	310	33
-	+	312	62
-	+	314	9
-	+	310	0
-	+	313	6
-	+	315	3
-	+	317	37
-	+	316	28
-	+	317	37
-	+	316	37
-	+	320	0
-	+	316	46
-	+	317	0
-	+	316	101
-	+	317	40
-	+	308	12
-	+	320	3
-	+	306	0
-	+	320	6
-	+	312	24
-	+	318	20
-	+	301	0
-	+	318	44
-	+	301	0
-	+	318	72
-	+	317	41
-	+	318	72
-	+	317	41
-	+	318	29
-	+	247	8
-	+	320	29
-	+	318	88
-	+	320	0
-	+	320	58
-	+	320	0
-	+	318	88
-	+	319	0
-	+	318	88
-	+	319	86
-
-> ~/Erlang/stripe/Makefile
-	*	1497733999	0
-	"	19	0
-	^	17	1
-	.	20	0
-	+	1	3
-	+	6	1
-	+	4	0
-	+	3	38
-	+	2	25
-	+	3	31
-	+	5	11
-	+	15	0
-	+	7	13
-	+	11	18
-	+	8	30
-	+	7	0
-	+	8	0
-	+	7	21
-	+	14	14
-	+	11	26
-	+	14	13
-	+	19	11
-	+	22	0
-	+	19	37
-	+	19	0
-	+	16	5
-	+	19	39
-	+	19	51
-	+	17	13
-	+	20	0
-	+	21	0
-	+	8	28
-	+	18	11
-	+	19	0
-	+	18	15
-	+	18	0
-	+	19	1
-	+	18	12
-	+	19	1
-	+	16	4
-	+	19	29
-	+	12	0
-	+	19	0
-	+	20	1
-	+	17	1
-	+	11	1
-	+	8	1
-	+	16	0
-	+	14	1
-	+	19	39
-	+	20	0
-	+	17	0
-	+	20	0
-
-> ~/Erlang/stripe/Makefille
-	*	1497731693	0
 	"	1	0
